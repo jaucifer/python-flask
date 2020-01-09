@@ -7,10 +7,10 @@ class TestHelloWorld(unittest.TestCase):
         self.app.testing = True
   def test_status_code(self):
         response = self.app.get('/')
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 500)
   def test_greeting_message(self):
     response = self.app.get('/')
-    greet = 'Welcome to CI/CD'
+    greet = wrap_html(greet)
     self.assertEqual(response.data, greet)
 if __name__ == '__main__':
   unittest.main()
