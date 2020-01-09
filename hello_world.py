@@ -1,7 +1,7 @@
 from flask import Flask
 
 def wrap_html(greet):
-    html = format(greet)
+    html = greet
     return html
 
 app = Flask(__name__)
