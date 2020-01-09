@@ -1,5 +1,9 @@
 from flask import Flask
 
+def wrap_html(greet):
+    html = format(greet)
+    return html
+
 app = Flask(__name__)
 
 @app.route('/')
