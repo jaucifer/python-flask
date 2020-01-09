@@ -18,8 +18,8 @@ jobs:
         path: test-reports
       - store_artifacts:
         path: test-reports
- workflows:
+workflows:
   version: 2.1
-  build_tests:
+  build-tests:
     jobs:
       - run_test
