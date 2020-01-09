@@ -19,6 +19,7 @@ jobs:
       - store_artifacts:
         path: test-reports
  workflows:
+  version: 2.1
   build_tests:
     jobs:
       - run_test
