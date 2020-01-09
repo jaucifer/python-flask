@@ -11,5 +11,5 @@ class TestHelloWorld(unittest.TestCase):
   def test_greeting_message(self):
     greeting = 'Welcome to CI/CD'
     self.assertEqual(hello_world.greet(), greeting)
-if __name__ == '__main__'
+if __name__ == '__main__':
   unittest.main()
